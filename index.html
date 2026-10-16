@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080808">
+<title>MawyaMade by Miftahul Mawya — Cinematic Recipe & Video Library</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#home"><span class="monogram">MM</span><span><span class="brand-name">MAWYAMADE</span><span class="brand-sub">BY MIFTAHUL MAWYA</span></span></a><button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button><nav class="nav" id="nav"><a href="#discover">Discover</a><a href="#categories">Categories</a><a href="#process">Our process</a><a href="#about">About</a><a href="#community">Community</a></nav><a href="#discover" class="nav-cta">Explore recipes ↗</a></header>
+<main>
+<section class="hero" id="home"><div><div class="eyebrow">The art of making</div><h1>More Than<br>Food.<br><em>A whole<br>experience.</em></h1><p class="hero-copy">Discover the ingredients, the process, and the little details that turn everyday food and drinks into something unforgettable.</p><div class="hero-actions"><a class="primary-btn" href="#discover">Explore the collection ↗</a><a class="outline-btn" href="#process">See how it works</a></div><div class="hero-meta"><div><strong id="recipeCount">300+</strong><span>Recipes to explore</span></div><div><strong>01</strong><span>Ingredient at a time</span></div><div><strong>∞</strong><span>Things to create</span></div></div></div>
+<div class="hero-art"><span class="orb one"></span><span class="orb two"></span><div class="hero-image"><img src="images/embedded-image-1.jpg" alt="Miftahul Mawya cooking in her kitchen"></div><div class="floating-card"><small>MAWYA'S PICK · 01</small><strong>Signature Chai</strong><span>Comfort in every pour · 12 min</span></div><div class="vertical-note">INGREDIENTS · PROCESS · MAGIC</div></div></section>
+<div class="marquee"><div class="marquee-track"><span>COFFEE <i>✳</i></span><span>JUICES <i>✳</i></span><span>PASTA <i>✳</i></span><span>PIZZA <i>✳</i></span><span>TEA <i>✳</i></span><span>SHAKES <i>✳</i></span><span>DESSERTS <i>✳</i></span><span>COFFEE <i>✳</i></span><span>JUICES <i>✳</i></span><span>PASTA <i>✳</i></span><span>PIZZA <i>✳</i></span><span>TEA <i>✳</i></span><span>SHAKES <i>✳</i></span><span>DESSERTS <i>✳</i></span></div></div>
+<section class="section" id="discover"><div class="section-head"><div><div class="eyebrow">A world of flavour</div><h2>Discover the <em>process.</em></h2></div><p>From the first ingredient to the final plate. Pick a category, open a recipe, and make it your own.</p></div>
+<div class="category-strip" id="categories"><button class="category-tile active" data-category="all"><span class="emoji">✦</span><span>Everything</span></button><button class="category-tile" data-category="juice"><span class="emoji">🍊</span><span>Fresh Juices</span></button><button class="category-tile" data-category="coffee"><span class="emoji">☕</span><span>Hot & Cold Coffee</span></button><button class="category-tile" data-category="pizza"><span class="emoji">🍕</span><span>Pizza Studio</span></button><button class="category-tile" data-category="shake"><span class="emoji">🥤</span><span>Shakes</span></button><button class="category-tile" data-category="tea"><span class="emoji">🫖</span><span>Tea Corner</span></button><button class="category-tile" data-category="meal"><span class="emoji">🍝</span><span>Meals & More</span></button></div>
+<div class="filter-row"><div class="searchbox"><input id="searchInput" type="search" placeholder="Search coffee, mango, pizza, pasta..." aria-label="Search recipes"></div><select class="filter-select" id="timeFilter"><option value="all">Any time</option><option value="15">Under 15 min</option><option value="30">Under 30 min</option><option value="60">Under 60 min</option></select><select class="filter-select" id="sortFilter"><option value="featured">Featured first</option><option value="time">Quickest first</option><option value="az">Name A–Z</option></select></div><p class="results-label" id="resultsLabel">SHOWING ALL RECIPES</p><div class="recipe-grid" id="recipeGrid"></div><div class="empty-state" id="emptyState"><b>No recipe found just yet.</b>Try another name or category.</div></section>
+<section class="feature-band" id="process"><div class="feature-visual"><img src="images/embedded-image-2.jpg" alt="Miftahul Mawya preparing ingredients in her kitchen"></div><div class="feature-copy"><div class="eyebrow">Not just a recipe</div><h2>See every step.<br><em>Feel every flavour.</em></h2><p>Each recipe brings the essentials together: a clear ingredient list, step-by-step instructions, estimated preparation and cooking time, difficulty level, and a visual guide to help you understand the process.</p><div class="process-points"><div><strong>01 / INGREDIENTS</strong><span>Know what you need</span></div><div><strong>02 / THE METHOD</strong><span>Follow each step</span></div><div><strong>03 / THE TIMING</strong><span>Plan your minutes</span></div><div><strong>04 / THE FINISH</strong><span>Serve it beautifully</span></div></div><a href="#discover" class="gold-btn">Choose a recipe ↗</a></div></section>
+
+
+<section class="community-section" id="community">
+  <div class="community-shell">
+    <div class="community-top">
+      <div><div class="eyebrow">MAWYAMADE COMMUNITY</div><h2>Ask, share & <em>cook together.</em></h2></div>
+      <p>Sign in to ask Miftahul Mawya a question, share cooking tips, upload photos/videos and join the public recipe community. Once your Firebase project is configured, posts and comments sync across devices.</p>
+    </div>
+    <div class="community-grid">
+      <div class="community-panel">
+        <div class="community-authbar">
+          <div><h3 style="margin-bottom:5px">Member access</h3><p class="community-help" id="authState">Sign in to post, comment and upload media. If Firebase is not configured, use demo login to test locally.</p></div>
+          <div class="community-actions"><button class="community-btn primary" type="button" id="signInBtn">Sign in with Google</button><button class="community-btn" type="button" id="signOutBtn" hidden>Sign out</button><button class="community-btn" type="button" id="pushBtn" hidden>Enable push alerts</button></div>
+        </div>
+        <h3>Community wall</h3>
+        <p class="community-help">Post a question, recipe idea, cooking result, image or video. All visitors can read posts and comments. Signed-in members can publish and comment.</p>
+        <form class="community-form" id="communityPostForm">
+          <label>Your display name<input id="communityName" maxlength="45" placeholder="e.g. Ayesha" required></label>
+          <label>Post type<select id="communityType"><option>Ask Miftahul</option><option>Recipe question</option><option>My cooking result</option><option>Recipe suggestion</option><option>Video tutorial</option></select></label>
+          <label>Your message<textarea id="communityMessage" maxlength="1200" placeholder="Ask anything about ingredients, cooking steps, timing, or share your own tip…" required></textarea></label>
+          <label>Add an image or video (optional)<input id="communityFile" type="file" accept="image/*,video/*"></label>
+          <video class="upload-preview" id="communityVideoPreview" controls></video>
+          <img class="upload-preview" id="communityImagePreview" alt="Upload preview">
+          <div class="community-actions"><button class="community-btn primary" type="submit">Publish post ↗</button><button class="community-btn" type="button" id="communityClear">Clear form</button></div>
+          <div class="community-status" id="communityStatus" aria-live="polite">Demo mode: posts and comments are saved only in this browser.</div>
+        </form>
+        <div class="community-feed" id="communityFeed"></div>
+      </div>
+      <aside>
+        <div class="community-panel">
+          <h3>Notifications</h3>
+          <p class="community-help">Live notifications for new community posts, comments and recipes. Browser push alerts require setup below.</p>
+          <div class="notification-list" id="communityNotifications"><div class="notification-item"><span class="notification-dot"></span><div>Welcome to MawyaMade Community.<small>Notifications appear here in this browser demo.</small></div></div></div>
+          <div class="community-actions" style="margin-top:14px"><button class="community-btn" type="button" id="clearNotifications">Clear notifications</button></div>
+        </div>
+        <div class="community-panel" id="adminRecipePanel" style="margin-top:18px" hidden>
+          <h3>Admin studio · Publish recipe</h3>
+          <p class="community-help">Only the configured admin account can publish shared recipes. Every visitor sees the recipe after publishing.</p>
+          <form class="community-form" id="adminRecipeForm">
+            <label>Recipe name<input id="adminRecipeName" maxlength="90" placeholder="e.g. Mango Lassi" required></label>
+            <label>Category<select id="adminRecipeCategory"><option value="juice">Juice & fruit drinks</option><option value="pizza">Pizza</option><option value="coffee">Hot & cold coffee</option><option value="shake">Milkshakes</option><option value="tea">Tea</option><option value="meals">Pasta, noodles & meals</option></select></label>
+            <label>Short description<input id="adminRecipeDescription" maxlength="240" placeholder="A short description" required></label>
+            <label>Ingredients (one per line)<textarea id="adminRecipeIngredients" maxlength="2500" placeholder="Milk — 1 cup&#10;Sugar — 1 tsp" required></textarea></label>
+            <label>Making steps (one per line)<textarea id="adminRecipeSteps" maxlength="4000" placeholder="1. Prepare the ingredients&#10;2. Mix and cook..." required></textarea></label>
+            <label>Food image<input id="adminRecipeImage" type="file" accept="image/*" required></label>
+            <label>Making video URL (optional)<input id="adminRecipeVideo" type="url" placeholder="https://youtube.com/..."></label>
+            <button class="community-btn primary" type="submit">Publish recipe for everyone ↗</button>
+            <div class="community-status" id="adminRecipeStatus" aria-live="polite"></div>
+          </form>
+        </div>
+        <div class="community-panel" style="margin-top:18px">
+          <h3>Community recipes</h3><p class="community-help">Recipes published by the admin appear here live for every visitor.</p>
+          <div class="community-feed" id="sharedRecipeFeed"></div>
+        </div>
+        <div class="community-note"><strong>Firebase setup required:</strong> the code is ready for Firebase, but you must add your own Firebase web config and deploy the included security rules/functions. Real shared posts, comments and live notifications will work after setup. Push alerts while the site is closed also require Firebase Cloud Messaging.</div>
+        <div class="community-panel" style="margin-top:18px">
+          <h3>How to make it live</h3>
+          <ol style="padding-left:19px;color:#cfc7b9;font-size:12px;line-height:1.9">
+            <li>Create a Firebase project at <a href="https://console.firebase.google.com/" target="_blank" rel="noopener">Firebase Console</a>.</li>
+            <li>Enable Authentication (Google or email), Firestore Database and Storage.</li>
+            <li>Register a Web App and copy its Firebase configuration.</li>
+            <li>Save posts/comments in Firestore and media files in Storage.</li>
+            <li>Use Firebase Cloud Messaging or an email service for notifications; configure secure rules before publishing.</li>
+            <li>Deploy the site on GitHub Pages or Firebase Hosting and test with two accounts/devices.</li>
+          </ol>
+          <a class="community-btn primary" style="display:inline-block;text-decoration:none" href="https://firebase.google.com/docs/web/setup" target="_blank" rel="noopener">Firebase setup guide ↗</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter"><div class="eyebrow" style="justify-content:center">Your next favourite</div><h2>What's on the <em style="color:var(--gold2)">menu?</em></h2><p>Search the collection and find a new thing to make today. More recipes can be added to this single-file website any time.</p><form class="newsletter-form" id="quickSearchForm"><input id="quickSearch" placeholder="Try “mango juice”..." aria-label="Search for a recipe"><button type="submit">Find it ↗</button></form></section>
+<section class="section how-section" id="about"><div class="section-head"><div><div class="eyebrow">A little kitchen philosophy</div><h2>Good food, <em>made simpler.</em></h2></div><p>MawyaMade is a personal food-making collection built around curiosity, creativity, and the joy of learning how things are made.</p></div><div class="owner-card"><img class="owner-photo" src="images/embedded-image-3.jpg" alt="Miftahul Mawya in her kitchen"><div class="owner-details"><div class="eyebrow">CREATOR & CONTACT</div><h3>Miftahul Mawya</h3><p>Creator of MawyaMade — a cinematic recipe library for learning how food and drinks are made.</p><p><strong>Phone:</strong> <a href="tel:+8801741534469">01741-534469</a></p><p><strong>Email:</strong> <a href="mailto:mawyamiftah94@email">mawyamiftah94@email</a> <span class="contact-note">(email address may be incomplete; add the correct domain if needed)</span></p><p><strong>GitHub:</strong> <a href="https://github.com/miftahul-mawya" target="_blank" rel="noopener">github.com/miftahul-mawya ↗</a></p></div></div><div class="steps-grid><div class="step-card"><span class="step-num">01</span><h3>Choose your craving</h3><p>Browse separate collections for juice, coffee, pizza, shakes, tea, pasta, noodles, and more.</p></div><div class="step-card"><span class="step-num">02</span><h3>Gather ingredients</h3><p>Check quantities before you start. Tick ingredients off as you prepare them.</p></div><div class="step-card"><span class="step-num">03</span><h3>Follow the method</h3><p>Work through simple, numbered instructions with realistic estimated timings.</p></div><div class="step-card"><span class="step-num">04</span><h3>Make it yours</h3><p>Use the tips, adjust sweetness and toppings, then save the recipes you love.</p></div></div></section>
+</main><footer><div><strong>MAWYAMADE</strong><br><span style="display:block;margin-top:8px">By Miftahul Mawya · Every Ingredient Has a Story.</span></div><div class="footer-links"><a href="#home">Back to top ↑</a><a href="#discover">Recipes</a><a href="#about">About</a></div><span>© <span id="year"></span> MawyaMade</span></footer>
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-label="Recipe details"><article class="modal"><button class="modal-close" id="modalClose" aria-label="Close recipe">×</button><div id="modalInner"></div></article></div><div class="toast" id="toast"></div>
+<script src="js/recipes.js"></script>
+
+<section class="section" id="megaRecipeLibrary">
+  <div class="mega-head"><div><div class="eyebrow">THE EXPANDED VIDEO COOKBOOK</div><h2>Learn it. <em>Make it.</em></h2></div>
+  <p>Browse a large collection of drink, snack and meal ideas. Open a recipe for ingredients and a step-by-step method, or open YouTube results to watch a real cook demonstrate it.</p></div>
+  <div class="mega-controls">
+    <input id="megaSearch" type="search" placeholder="Search recipes, e.g. mango, BBQ, latte…" aria-label="Search recipes">
+    <select id="megaCategory" aria-label="Choose recipe category"><option value="all">All categories</option><option value="juice">Juices & fruit drinks</option><option value="pizza">Pizza</option><option value="coffee">Hot & cold coffee</option><option value="shake">Milkshakes & shakes</option><option value="tea">Tea & chai</option><option value="meals">Pasta, noodles & more</option></select>
+    <select id="megaSort" aria-label="Sort recipes"><option value="az">Name: A–Z</option><option value="quick">Quickest first</option><option value="easy">Easy first</option></select>
+  </div>
+  <p class="mega-count" id="megaCount">Loading recipe ideas…</p>
+  <div class="mega-grid" id="megaGrid"></div>
+  <div class="mega-notice"><strong>Video note:</strong> To avoid fake or broken video URLs, each “Watch making video” button opens a YouTube search for that exact recipe. Choose a clear tutorial with ingredients and full steps. Recipe quantities and timings are estimates; check food safety and adjust to your equipment and serving size.</div>
+</section>
+<div class="recipe-detail-overlay" id="recipeDetailOverlay" role="dialog" aria-modal="true" aria-labelledby="recipeDetailTitle">
+  <div class="recipe-detail"><button class="detail-close" id="detailClose" aria-label="Close">×</button><div class="eyebrow" id="detailCategory"></div><h3 id="recipeDetailTitle"></h3><p id="detailIntro"></p><div class="mega-meta" id="detailMeta"></div><h4>Ingredients</h4><ul id="detailIngredients"></ul><h4>Step-by-step method</h4><ol id="detailSteps"></ol><h4>Final look & serving tip</h4><p id="detailFinish"></p><a id="detailVideo" class="mega-btn primary" target="_blank" rel="noopener">▶ Watch making video on YouTube</a></div>
+</div>
+<script src="js/recipe-library.js"></script>
+
+
+
+
+
+<script src="js/image-fallback.js"></script>
+
+
+
+<script src="js/firebase-community.js" type="module"></script>
+
+
+
+
+<script src="js/image-fallback-extra.js"></script>
+
+<script src="js/motion.js"></script>
+
+
+<div class="demo-login-overlay" id="demoLoginOverlay" role="dialog" aria-modal="true" aria-labelledby="demoLoginTitle">
+  <form class="demo-login-card" id="demoLoginForm">
+    <button class="demo-login-close" type="button" id="demoLoginClose" aria-label="Close login">×</button>
+    <div class="demo-login-monogram">MM</div>
+    <div class="eyebrow">MAWYAMADE MEMBER ACCESS</div>
+    <h2 id="demoLoginTitle">Welcome to <em>the table.</em></h2>
+    <p>Try the community interface with a local demo profile. This preview is saved only in this browser; real shared accounts require connecting Firebase.</p>
+    <label>Display name<input id="demoLoginName" maxlength="45" autocomplete="nickname" placeholder="Enter your name" required></label>
+    <div class="demo-login-actions"><button class="demo-login-continue" type="submit">Continue to community ↗</button><button class="demo-login-cancel" type="button" id="demoLoginCancel">Cancel</button></div>
+    <p class="demo-login-foot">DEMO ACCESS · NOT A SECURE OR SHARED ACCOUNT</p>
+  </form>
+</div>
+
+</body></html>

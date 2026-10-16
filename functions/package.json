@@ -1,0 +1,12 @@
+{
+  "name": "mawyamade-notifications",
+  "description": "MawyaMade Firestore triggers and Firebase Cloud Messaging push notifications",
+  "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0",
+    "firebase-functions": "^6.0.1"
+  }
+}

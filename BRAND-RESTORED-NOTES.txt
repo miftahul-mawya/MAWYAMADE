@@ -1,0 +1,1 @@
+MAWYAMADE brand visibility and recipe-card visibility patch. The Firebase project configuration still needs to be supplied and deployed for live multi-user features.
